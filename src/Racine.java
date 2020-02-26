@@ -6,7 +6,7 @@ public class Racine {
         double[] values = new double[(int)(b-a)+1];
         //on ajoute dans le tableau les valeurs des racines carré
         for (int i = 0; i <= b-a ; i++) {
-            values[i] = (int)Math.sqrt(a+i);
+            values[i] = Math.sqrt(a+i);
         }
         //on retourne le tableau qui contient les racines
         return values;
