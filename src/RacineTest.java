@@ -60,4 +60,5 @@ public class RacineTest {
         double[] values = {1, Math.sqrt(2)};
         assertArrayEquals(values, Racine.squareBetween_A_and_B(a, b),0.0001);
     }
+
 }
