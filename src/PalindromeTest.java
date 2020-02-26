@@ -40,6 +40,7 @@ public class PalindromeTest {
         assertEquals(0, Palindrome.numberOfPalindromWords(s));
     }
 
+    //on ne prends pas en compte les virgules et les points etc
     @Test
     public void palindrome_phrase_1pal() {
         String s = "Coucou Lol.";
