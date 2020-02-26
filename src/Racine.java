@@ -12,7 +12,7 @@ public class Racine {
         return values;
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         double a = 1;
         double b = 100;
         double[] t = squareBetween_A_and_B(a,b);
