@@ -11,6 +11,7 @@ public class Palindrome {
         boolean b = false;
         //on verifie tout les mots du tableau
         for (String str :words) {
+            str = str.toUpperCase();
             //on verifie tout les charactere du mots en pair
             for(int i = 0;i<str.length();i++){
                 //si les premiere et derniere lettre sont identique il met la valeur du boolean a true
