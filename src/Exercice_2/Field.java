@@ -1,18 +1,46 @@
-package Exercice_2;
+import static java.lang.Math.*;
 
-import java.util.ArrayDeque;
+/**
+ * Classe pour le terrain où évolueront les objets.
+ */
 
 public class Field {
 
-    private double height;
-    private double width;
-    private ArrayDeque<FieldObject> objectList;
+    /**
+     * Hauteur et largeur du terrain.
+     */
+    protected int heigth, width;
 
+    /**
+     * Construction d'un terrain de dimensions données.
+     *
+     * @param h  Hauteur du terrain
+     * @param w  Largeur du terrain
+     */
+    public Field(int h, int w) {
+	// À compléter.
+    }
 
-    public Field(double height,double width){
-        this.height = height;
-        this.width = width;
-        objectList = new ArrayDeque<FieldObject>();
+    /**
+     * Normalisation d'une abscisse.
+     *
+     * @param x  Abscisse quelconque
+     * @return Abscisse normalisée
+     */
+    public double normalizeX(double x) {
+	// À compléter.
+	return 0;
+    }
+
+    /**
+     * Normalisation d'une ordonnée.
+     *
+     * @param x  Ordonnée quelconque
+     * @return Ordonnée normalisée
+     */
+    public double normalizeY(double y) {
+	// À compléter.
+	return 0;
     }
 
 }
