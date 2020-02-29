@@ -1,3 +1,5 @@
+package Exercice_2;
+
 import static java.lang.Math.*;
 
 /**
@@ -18,7 +20,18 @@ public class Field {
      * @param w  Largeur du terrain
      */
     public Field(int h, int w) {
-	// À compléter.
+        if (h <= 0){
+            this.heigth = 1;
+        } else {
+            this.heigth = h;
+        }
+
+        if (w <= 0) {
+            this.width = 1;
+        } else {
+            this.width = w;
+        }
+
     }
 
     /**
@@ -28,19 +41,33 @@ public class Field {
      * @return Abscisse normalisée
      */
     public double normalizeX(double x) {
-	// À compléter.
-	return 0;
+	    if (0 <= x && x <= 10){
+	        return x;
+        } else {
+	        if (x < 0){
+	            return 0;
+            }  else {
+	            return 10;
+            }
+        }
     }
 
     /**
      * Normalisation d'une ordonnée.
      *
-     * @param x  Ordonnée quelconque
+     * @param //x  Ordonnée quelconque
      * @return Ordonnée normalisée
      */
     public double normalizeY(double y) {
-	// À compléter.
-	return 0;
+        if (0 <= y && y <= 8){
+            return y;
+        } else {
+            if (y < 0){
+                return 0;
+            }  else {
+                return 8;
+            }
+        }
     }
 
 }
