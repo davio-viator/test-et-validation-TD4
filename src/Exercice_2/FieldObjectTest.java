@@ -1,4 +1,9 @@
+package Exercice_2;
+
 import static org.junit.Assert.*;
+
+import Exercice_2.Field;
+import Exercice_2.FieldObject;
 import org.junit.*;
 
 public class FieldObjectTest {

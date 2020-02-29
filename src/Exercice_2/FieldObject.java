@@ -1,3 +1,7 @@
+package Exercice_2;
+
+import Exercice_2.Field;
+
 import static java.lang.Math.*;
 
 /**
@@ -23,7 +27,33 @@ public class FieldObject {
      * @param y  Ordonnée
      */
     public FieldObject(Field f, int w, double x, double y) {
-	// À compléter.
+        if (w <= 0){
+            this.weight = 1;
+        } else {
+            this.weight = w;
+        }
+
+        if (x < 0){
+            this.x = 0;
+        } else {
+            if (x > f.width) {
+                this.x = f.width;
+            } else {
+                this.x = x;
+            }
+        }
+
+        if (y < 0){
+            this.y = 0;
+        } else {
+            if (y > f.heigth) {
+                this.y = f.heigth;
+            } else {
+                this.y = y;
+            }
+        }
+
+	    this.field = f;
     }
 
     /**
@@ -32,8 +62,7 @@ public class FieldObject {
      * @return Poids
      */
     public int getWeight() {
-	// À compléter.
-	return 0;
+    	return this.weight;
     }
 
     /**
@@ -43,7 +72,8 @@ public class FieldObject {
      * @param y  Ordonnée
      */
     public void unsafeSetPosition(double x, double y) {
-	// À compléter.
+        this.x = x;
+        this.y = y;
     }
 
 }
