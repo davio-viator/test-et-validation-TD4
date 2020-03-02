@@ -20,8 +20,8 @@ public class Moveable extends FieldObject {
      * @param y  Ordonnée
      */
     public Moveable(Field f, int w, double x, double y) {
-	super(f, w, x, y);
-	// À compléter.
+	    super(f, w, x, y);
+        this.fuel = 10;
     }
 
     /**
