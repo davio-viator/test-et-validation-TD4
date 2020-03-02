@@ -1,3 +1,4 @@
+package Exercice_2;
 import static java.lang.Math.*;
 
 /**
