@@ -1,5 +1,7 @@
-import static org.junit.Assert.*;
+package Exercice_2;
 import org.junit.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class MoveableTest {
 

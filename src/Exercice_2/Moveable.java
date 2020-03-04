@@ -1,3 +1,4 @@
+package Exercice_2;
 import static java.lang.Math.*;
 
 /**
@@ -19,8 +20,8 @@ public class Moveable extends FieldObject {
      * @param y  Ordonnée
      */
     public Moveable(Field f, int w, double x, double y) {
-	super(f, w, x, y);
-	// À compléter.
+	    super(f, w, x, y);
+        this.fuel = 10;
     }
 
     /**
@@ -31,8 +32,7 @@ public class Moveable extends FieldObject {
      * @return Distance
      */
     protected double dist(double x, double y) {
-	// À compléter.
-	return 0;
+	    return (Math.abs(this.x - this.field.normalizeX(x)) + Math.abs(this.y - this.field.normalizeY(y)));
     }
 
     /**
@@ -42,7 +42,24 @@ public class Moveable extends FieldObject {
      * @param y  Ordonnée cible
      */
     public void goTo(double x, double y) {
-	// À compléter.
+        for (int i = 0; i < dist(x,y); i++){
+
+            if(this.fuel > 0){
+                this.fuel = this.fuel - 1;
+
+                if (this.field.normalizeX(x) > this.x){
+                    this.x = this.x + 1;
+                } else {
+                    this.x = this.x - 1;
+                }
+
+                if (this.field.normalizeY(y) > this.y){
+                    this.y = this.y + 1;
+                } else {
+                    this.y = this.y - 1;
+                }
+            }
+        }
     }
 
 }

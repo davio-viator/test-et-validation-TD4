@@ -5,7 +5,9 @@ public class Matrice {
     private static String s ="";
 
     public static int[][] matrice(int m, int n, int a, int b) {
+        // Déclarer la matrice vide de longueur m * n
         int[][] mat = new int[m][n];
+        // Remplir la matrice case par case avec un random entre a et b
         for (int i = 0; i < m; i++){
             s+="[";
             for (int j = 0; j < n; j++){
@@ -15,6 +17,7 @@ public class Matrice {
             }
             s+="]\n";
         }
+        // Retour de la matrice complétée
         return mat;
     }
 
